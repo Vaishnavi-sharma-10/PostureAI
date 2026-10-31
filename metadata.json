@@ -1,0 +1,6 @@
+{
+  "name": "POSTUREAI",
+  "description": "Understand Your Posture. Improve Your Alignment. Real-time AI-powered posture assessment and biomechanical telemetry.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

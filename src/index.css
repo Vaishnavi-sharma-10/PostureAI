@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #0e1321;
+    --bg-surface-container: #1a1f2e;
+    --bg-surface-high: #252a39;
+    --bg-surface-highest: #303444;
+    --text-primary: #dee2f6;
+    --text-muted: #949eb5;
+    --color-cyan: #00e5ff;
+    --color-cyan-glow: rgba(0, 229, 255, 0.4);
+    --color-emerald: #4edea3;
+    --color-amber: #ffb95f;
+    --color-coral: #ff6b6b;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0e1321;
+    color: #dee2f6;
+    overflow-x: hidden;
+  }
+}
+
+.font-telemetry {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Futuristic HUD Glowing effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35), inset 0 0 10px rgba(0, 229, 255, 0.15);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(78, 222, 163, 0.35);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(255, 185, 95, 0.35);
+}
+
+.glow-coral {
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.35);
+}
+
+/* Futuristic scanline & grid background */
+.hud-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 229, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
+}
+
+.hud-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 229, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 229, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e1321;
+}
+::-webkit-scrollbar-thumb {
+  background: #252a39;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00e5ff;
+}
